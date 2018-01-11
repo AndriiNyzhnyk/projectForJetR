@@ -25,4 +25,5 @@ html, body {
     margin: 10px 0;
     width: 128px;
     height: 128px;
+    display: none;
 }
