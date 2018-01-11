@@ -43,9 +43,11 @@ function registerClick(item) {
 function compareItem() {
     console.log(counter);
     if(counter.prevItem[3] === counter.curItem[3]) {
+        alert('Чудово, так тримати');
         hideBlock();
     } else {
         hideImg();
+        alert('Подумай краще');
     }
     nullifyCounter();
 }
