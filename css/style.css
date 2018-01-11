@@ -4,6 +4,21 @@ html, body {
 
 }
 
+#tick {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+#tick p {
+    margin: 5px 0;
+}
+
+#tick input {
+    width: 200px;
+    height: 20px;
+}
+
 #content {
     display: flex;
     flex-direction: row;
