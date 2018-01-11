@@ -18,6 +18,12 @@ html, body {
     height: 20px;
 }
 
+#clock {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
 #content {
     display: flex;
     flex-direction: row;
