@@ -1,7 +1,6 @@
 html, body {
     margin: 0;
     padding: 0;
-
 }
 
 #tick {
@@ -34,6 +33,11 @@ html, body {
     margin: 5px;
     background-color: silver;
     text-align: center;
+    cursor: pointer;
+}
+
+.block:hover {
+    background-color: darkorange;
 }
 
 .block img {

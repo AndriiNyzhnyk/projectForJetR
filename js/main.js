@@ -68,6 +68,6 @@ $(document).ready(function() {
     }
 
     setInterval(() => {
-        $('input').val(`${countTick}`);
+        $('input').val('' + countTick);
     },500);
 });
