@@ -20,35 +20,33 @@ function hideImg() {
 }
 
 function hideBlock() {
-    $('#' + counter.prevItem).hide();
-    $('#' + counter.curItem).hide();
+    let item1 = counter.prevItem;
+    let item2 = counter.curItem;
+    setTimeout(() => {
+        $('#' + item1).hide();
+        $('#' + item2).hide();
+    }, 1000);
 }
 
 function registerClick(item) {
     if(counter.prevItem === '') {
         counter.prevItem = item;
-        console.log(counter.prevItem + ' prev');
     } else  {
         counter.curItem = item;
-        console.log(counter.curItem + ' cur');
     }
 
     if(counter.prevItem !== '' && counter.curItem !== '') {
         compareItem();
     }
-
-
 }
 
 function compareItem() {
     console.log(counter);
     if(counter.prevItem[3] === counter.curItem[3]) {
-        setTimeout(hideBlock(), 1500);
+        hideBlock();
     } else {
-        // alert('false');
         hideImg();
     }
-    
     nullifyCounter();
 }
 
