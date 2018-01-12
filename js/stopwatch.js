@@ -1,5 +1,5 @@
 //объявляем переменные
-let base = 60;
+var base = 60;
 var clocktimer,dateObj,dh,dm,ds,ms;
 var readout='';
 var h=1,m=1,tm=1,s=0,ts=0,ms=0,init=0;
@@ -49,5 +49,3 @@ function StartStop() {
         init=0;
     }
 }
-
-StartStop();

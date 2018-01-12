@@ -8,12 +8,14 @@ $(document).ready(function() {
         if(nameUser !== "") {
             $('#welcome').hide();
             $('#wrapper').show();
+            StartStop();
 
         } else alert('Введіть Ваше імʼя');
     });
 
     // code for game
     let countTick = 0;
+    let successTick = 0;
 
     let counter = {
         prevItem: '',
@@ -66,6 +68,7 @@ $(document).ready(function() {
             alert('Чудово, так тримати');
             hideBlock();
             tick();
+            successfulTick();
         } else {
             hideImg();
             alert('Подумай краще');
@@ -77,6 +80,24 @@ $(document).ready(function() {
     function nullifyCounter() {
         counter.prevItem = '';
         counter.curItem = '';
+    }
+    
+    function successfulTick() {
+        successTick++;
+        if(successTick == 8) {
+            console.log('game over');
+            congratuation();
+        }
+    }
+
+    // view congratuation modal window
+    function congratuation() {
+        StartStop();
+        let time = $('#timer').val();
+        $('#tickResult').val('' + countTick);
+        $('#timeResult').val('' + time);
+        let url = "#openModal";
+        $(location).attr('href', url);
     }
 
     // update count tick on page

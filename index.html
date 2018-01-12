@@ -21,7 +21,7 @@
             </div>
             <div id="clock">
                 <form name=MyForm>
-                    <input type="text" name=stopwatch size=10 value="00:00:00.00">
+                    <input type="text" id="timer" name=stopwatch size=10 value="00:00:00.00">
                 </form>
             </div>
             <div id="content">
@@ -43,6 +43,18 @@
                 <div class="block" id="img81"><img src="img/twitter.png" alt="animal"></div>
             </div>
         </div>
+
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Закрыть" class="close">X</a>
+                <h3>Вітаємо Ви перемогли</h3>
+                <p>Виконано ходів:</p>
+                <textarea class="congrat" id="tickResult" readonly></textarea>
+                <p>Пройшло часу:</p>
+                <textarea class="congrat" id="timeResult" readonly></textarea>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
