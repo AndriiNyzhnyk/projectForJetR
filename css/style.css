@@ -3,6 +3,49 @@ html, body {
     padding: 0;
 }
 
+textarea {
+    outline: none;
+    resize: none;
+    overflow: auto;
+}
+
+#welcome {
+    text-align: center;
+    margin-top: 17%;
+}
+
+#welcome h3 {
+    font-size: 2.3em;
+    font-family: Verdana, "Times New Roman";
+    margin: 20px;
+}
+
+#name {
+    width: 500px;
+    height: 35px;
+    font-size: 1.7em;
+    padding: 10px;
+    text-align: center;
+}
+
+#newGame {
+    margin-top: 25px;
+    padding: 15px;
+    font-size: 1.3em;
+    border-radius: 3px;
+    color: black;
+    background-color: silver;
+}
+
+#newGame:hover {
+    background-color: green;
+    color: white;
+}
+
+#wrapper {
+    display: none;
+}
+
 #tick {
     position: absolute;
     top: 5px;
