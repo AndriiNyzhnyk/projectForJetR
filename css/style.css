@@ -1,8 +1,14 @@
+/*general style*/
 html, body {
     margin: 0;
     padding: 0;
 }
 
+#wrapper {
+    display: none;
+}
+
+/*style for window welcome*/
 textarea {
     outline: none;
     resize: none;
@@ -42,10 +48,7 @@ textarea {
     color: white;
 }
 
-#wrapper {
-    display: none;
-}
-
+/*style for count tick*/
 #tick {
     position: absolute;
     top: 5px;
@@ -61,12 +64,14 @@ textarea {
     height: 20px;
 }
 
+/*style for stopwatch*/
 #clock {
     position: absolute;
     top: 0;
     right: 10px;
 }
 
+/*style for game*/
 #content {
     display: flex;
     flex-direction: row;

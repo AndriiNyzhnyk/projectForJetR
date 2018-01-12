@@ -1,4 +1,18 @@
 $(document).ready(function() {
+    // event at block welcome
+    let nameUser;
+    
+    $('#newGame').on('click', function () {
+        nameUser = $('#name').val();
+
+        if(nameUser !== "") {
+            $('#welcome').hide();
+            $('#wrapper').show();
+
+        } else alert('Введіть Ваше імʼя');
+    });
+
+    // code for game
     let countTick = 0;
 
     let counter = {
@@ -8,7 +22,6 @@ $(document).ready(function() {
 
     $('.block').on('click', function () {
         let id = this.id;
-        console.log(id);
         showImg(id);
         registerClick(id);
     });
@@ -64,9 +77,9 @@ $(document).ready(function() {
     function nullifyCounter() {
         counter.prevItem = '';
         counter.curItem = '';
-        console.log(counter);
     }
 
+    // update count tick on page
     setInterval(() => {
         $('input').val('' + countTick);
     },500);
