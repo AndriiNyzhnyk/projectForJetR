@@ -73,9 +73,16 @@ textarea {
 
 /*style for game*/
 #content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 650px;
     margin: 0 auto;
@@ -112,7 +119,7 @@ textarea {
     background: rgba(0,0,0,0.8);
     z-index: 99999;
     -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
+    -o-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     display: none;
     pointer-events: none;
@@ -130,7 +137,6 @@ textarea {
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
     background: #fff;
-    background: -moz-linear-gradient(#fff, #999);
     background: -webkit-linear-gradient(#fff, #999);
     background: -o-linear-gradient(#fff, #999);
     text-align: center;
@@ -147,10 +153,7 @@ textarea {
     width: 24px;
     text-decoration: none;
     font-weight: bold;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
     border-radius: 12px;
-    -moz-box-shadow: 1px 1px 3px #000;
     -webkit-box-shadow: 1px 1px 3px #000;
     box-shadow: 1px 1px 3px #000;
 }
